@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Dance Instructor | International Portfolio</title>
+    <!-- Tailwind CSS for clean layout -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Embedding fonts to ensure stability */
+        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,400&family=Inter:wght@300;400;600&display=swap');
+
+        :root {
+            --bg-color: #ffffff;
+            --text-primary: #000000;
+            --text-secondary: #666666;
+            --accent: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .serif {
+            font-family: 'Bodoni Moda', serif;
+        }
+
+        /* Prevent layout shift */
+        .section {
+            padding: 4rem 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: #eee;
+            width: 100%;
+            margin: 2rem 0;
+        }
+
+        /* Subtle animations */
+        .reveal {
+            animation: revealUp 0.8s ease-out forwards;
+        }
+
+        @keyframes revealUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Custom buttons */
+        .btn-primary {
+            display: inline-block;
+            background: #000;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.75rem;
+            transition: all 0.3s ease;
+            width: 100%;
+            text-align: center;
+        }
+
+        .btn-secondary {
+            display: inline-block;
+            border: 1px solid #000;
+            color: #000;
+            padding: 1rem 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.75rem;
+            transition: all 0.3s ease;
+            width: 100%;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        ul { list-style: none; padding: 0; }
+        li { 
+            display: flex; 
+            justify-content: space-between; 
+            border-bottom: 1px solid #f0f0f0; 
+            padding: 0.75rem 0;
+            font-size: 0.9rem;
+        }
+        li span { color: #999; font-style: italic; }
+    </style>
+</head>
+<body>
+
+    <!-- Hero -->
+    <header class="section flex flex-col justify-center min-h-[80vh] reveal">
+        <span class="text-[10px] uppercase tracking-[0.5em] text-gray-400 mb-4 text-center block">Dance Education</span>
+        <h1 class="serif text-6xl md:text-7xl text-center leading-tight mb-8">Slavik<br>Chichuhin.</h1>
+        <p class="text-center text-gray-500 max-w-md mx-auto leading-relaxed font-light">
+            Professional ballroom & latin coaching. 
+            Over 15 years of experience across Ukraine, China and Canada.
+        </p>
+    </header>
+
+    <!-- Experience Summary -->
+    <section class="section bg-[#fafafa] py-16">
+        <h2 class="serif text-3xl mb-6 italic">The Expertise</h2>
+        <p class="text-gray-600 leading-relaxed mb-8">
+            Specializing in all age groups. Whether you are looking for competitive excellence or social confidence, my global experience ensures a tailored approach to your movement.
+        </p>
+        <div class="grid grid-cols-3 gap-4 text-center">
+            <div>
+                <p class="text-xl serif italic">15+</p>
+                <p class="text-[9px] uppercase tracking-widest text-gray-400">Years</p>
+            </div>
+            <div>
+                <p class="text-xl serif italic">3</p>
+                <p class="text-[9px] uppercase tracking-widest text-gray-400">Countries</p>
+            </div>
+            <div>
+                <p class="text-xl serif italic">∞</p>
+                <p class="text-[9px] uppercase tracking-widest text-gray-400">Passion</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs -->
+    <section class="section">
+        <div class="mb-12">
+            <h3 class="serif text-2xl mb-6 italic border-b pb-2">01. Latin Program</h3>
+            <ul>
+                <li>Cha-Cha-Cha <span>Rhythm</span></li>
+                <li>Samba <span>Energy</span></li>
+                <li>Rumba <span>Soul</span></li>
+                <li>Paso Doble <span>Power</span></li>
+                <li>Jive <span>Spirit</span></li>
+            </ul>
+        </div>
+
+        <div class="mb-12">
+            <h3 class="serif text-2xl mb-6 italic border-b pb-2">02. Ballroom Program</h3>
+            <ul>
+                <li>Slow Waltz <span>Elegance</span></li>
+                <li>Tango <span>Drama</span></li>
+                <li>Viennese Waltz <span>Flow</span></li>
+                <li>Slow Foxtrot <span>Style</span></li>
+                <li>Quickstep <span>Speed</span></li>
+            </ul>
+        </div>
+
+        <div class="mb-12">
+            <h3 class="serif text-2xl mb-6 italic border-b pb-2">03. Social & More</h3>
+            <ul>
+                <li>Salsa / Bachata <span>Social</span></li>
+                <li>Wedding Dance <span>Custom</span></li>
+                <li>Choreography <span>Art</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Wedding Focus -->
+    <section class="section bg-black text-white text-center">
+        <span class="text-[9px] uppercase tracking-[0.4em] text-gray-500 mb-4 block">Special Occasions</span>
+        <h2 class="serif text-4xl mb-6 italic">Wedding Choreography</h2>
+        <p class="text-gray-400 text-sm leading-relaxed mb-8">
+            Creating unforgettable first dances. Bespoke choreography designed for your level, your song, and your story.
+        </p>
+        <div class="w-12 h-[1px] bg-white/20 mx-auto"></div>
+    </section>
+
+    <!-- Call to Action -->
+    <footer class="section text-center pt-20 pb-12">
+        <h2 class="serif text-3xl mb-8">Start Your Journey</h2>
+        <div class="flex flex-col gap-2 max-w-xs mx-auto">
+            <a href="https://wa.me/yourlink" class="btn-primary">Book a Lesson</a>
+            <a href="mailto:you@email.com" class="btn-secondary">Inquiry</a>
+        </div>
+        <p class="mt-16 text-[9px] uppercase tracking-[0.3em] text-gray-300">
+            Ukraine • China • Canada
+        </p>
+    </footer>
+
+</body>
+</html>
+
